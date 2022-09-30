@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("c.webp");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+width:max-content;
+text-align: center;
+border: 7px solid rgba(255, 214, 245, 0.63);
+border-radius: 30px;
+background-color: rgb(255, 255, 255);
+background-image: linear-gradient( 0deg, rgb(255, 255, 255) 23.8%, rgb(175, 210, 243) 92%);
+padding: 0 90px;
+color:rgb(109, 109, 109);
+margin:30px 0;
+}
+section p{
+    display: inline-flex;
+    font-weight: 560;
+
+}
+.location{
+    font-size: 25px;
+}
+.greet{
+    font-size: 29px;
+    margin:40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    font-weight: 500;
+    font-size: 19px;
+}
+
+
+img{
+    height:90px;
+}
+
+.time p{
+    color:white;
+}
