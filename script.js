@@ -10,18 +10,16 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=YOU
     var weatherDescription = data.weather[0].description;
     var temperature = data.main.temp;
     var icon = "http://api.openweathermap.org/img/w/" +data.weather[0].icon +".png";
-    $('.icon').attr('src',icon);
+    var time = new Date(data.dt*1000 +(data.timezone*1000)); 
     var temperature = Math.floor(temperature- 273.15);
+    $('.icon').attr('src',icon);
     $('.temp').append(temperature);
     $('.location').append(location);
-    var time = new Date(data.dt*1000 +(data.timezone*1000)); 
     $('.time').append(time);
     $('.weatherDescription').append(weatherDescription)
 
 
     let time_stringified = JSON.stringify(time);
-    console.log(time_stringified.slice(12,14))
-    console.log(time_stringified);
     let time_hour = time_stringified.slice(12,14);
 
 
@@ -41,6 +39,8 @@ $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=YOU
     //console.log(weatherDescription);
     //console.log(data.name);
     //"2022-09-30T16:56:21.000Z"
+    //console.log(time_stringified.slice(12,14))
+    //console.log(time_stringified);
 
 
 }
