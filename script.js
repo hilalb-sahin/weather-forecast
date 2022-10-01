@@ -1,9 +1,10 @@
 var city = "london"; 
+let api_key = '';
 
 //use your own api key
 //change city variable to view different locations
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=YOUR_API_KEY",function(data){
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=" +api_key + "",function(data){
     
     var location = data.name;
 
