@@ -3,7 +3,7 @@ var city = "london";
 
 
 
-$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=381645180f017e358ec5ee583ed7a70e",function(data){
+$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+ city +"&APPID=YOUR_API_KEY",function(data){
 
 
 
